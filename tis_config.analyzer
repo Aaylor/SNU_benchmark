@@ -1,0 +1,9 @@
+{
+  raw_options:
+    {
+      "-tis-libc": "false",
+      "-val-builtin": "-log,-sqrt,-sin,-cos",
+      "-permissive": "true",
+      "-val-profile": "analyzer"
+    }
+}
