@@ -70,13 +70,14 @@ fib(int n)
 #endif
   return ans;
 }
-    
+
+#include<tis_builtin.h>    
 main()
 {
   int a;
 
   // a = 30; // commented to make a nondeterministic
-  
+  a = tis_make_unkonwn(&a, sizeof(int));
   fib(a);
 }
 
