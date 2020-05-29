@@ -89,7 +89,7 @@ unsigned short icrc(unsigned short crc, unsigned long len,
 	printf("len = %d\n", len);
 #endif
 	for (j=1;j<=len;j++) {
-	  char data; // nondet
+	  char data = tis_interval(-128, 127); // nondet
 	  if (jrev < 0) {
 	    tmp1 = rchr[data]^ HIBYTE(cword);
 	  }
